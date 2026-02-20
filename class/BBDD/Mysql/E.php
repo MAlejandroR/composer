@@ -1,5 +1,4 @@
 <?php
-namespace BasesDatos;
 
 class E
 {

@@ -1,6 +1,5 @@
 <?php
 
-namespace BasesDatos;
 class A
 {
     public function __toString()
