@@ -1,0 +1,14 @@
+{
+    "name": "manuel/composer",
+    "authors": [
+        {
+            "name": "MAlejandroR",
+            "email": "manuelromeromiguel@gmail.com"
+        }
+    ],
+  "autoload": {
+    "classmap": ["class"]
+
+  }
+
+}

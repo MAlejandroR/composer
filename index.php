@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-
+require "vendor/autoload.php";
 
 $a = new A();
 $b = new B();
@@ -15,6 +15,7 @@ $h = new J();
 $i = new I();
 $j = new J();
 $k = new K();
+$l = new L();
 
 
 echo $a;
@@ -28,4 +29,5 @@ echo $h;
 echo $i;
 echo $j;
 echo $k;
+echo $l;
 
