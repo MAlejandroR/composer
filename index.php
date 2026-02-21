@@ -10,32 +10,39 @@ use Vistas\K;
 use Vistas\L;
 
 
-$a = new \BaseDatos\Mongo\A();
-$a2 = new \BaseDatos\Mysql\A();
-$b = new \BaseDatos\Mongo\B();
-$c = new \BaseDatos\Mongo\C();
-$d = new \BaseDatos\Mysql\D();
-$e = new \BaseDatos\Mysql\E();
-$f = new \Controlador\F();
-$g = new \Vistas\I();
-$h = new J();
-$i = new I();
-$j = new J();
-$k = new K();
-$l = new L();
+use BaseDatos\Mysql\Persona;
+use     Vistas\Plantilla;
+
+$generador = Faker\Factory::create("es_ES");
 
 
-echo $a;
-echo $a2;
-echo $b;
-echo $c;
-echo $d;
-echo $e;
-echo $f;
-echo $g;
-echo $h;
-echo $i;
-echo $j;
-echo $k;
-echo $l;
+for ($n=0; $n<10; $n++){
+    $nombre =$generador->firstname();
+    $edad = $generador->numberBetween(15,90);
+    $email = $generador->email();
+    $personas[]=new Persona($nombre,$email,$edad);
+}
+
+$campos = ["Nombre", "Email", "Edad"];
+$tabla_html=Plantilla::getTableHtml($campos, $personas);
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<fieldset style="background:antiquewhite; width:50%; margin:10% ">
+    <legend>Listado de personas</legend>
+    <?=$tabla_html?>
+</form>
+
+</fieldset>
+</body>
+</html>
+
 

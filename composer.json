@@ -16,6 +16,8 @@
       "Vistas\\": "class/Vistas"
     }
 
-  }
-
+  },
+    "require": {
+        "fakerphp/faker": "^1.24"
+    }
 }
