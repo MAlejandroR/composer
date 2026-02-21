@@ -1,5 +1,5 @@
 <?php
-
+namespace BaseDatos\Mysql;
 class D
 {
     public function __toString()

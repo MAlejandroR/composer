@@ -1,5 +1,5 @@
 <?php
-
+namespace Controlador\Publico;
 class H
 {
     public function __toString()

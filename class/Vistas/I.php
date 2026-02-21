@@ -1,5 +1,5 @@
 <?php
-
+namespace Vistas;
 class I
 {
     public function __toString()

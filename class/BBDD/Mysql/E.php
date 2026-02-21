@@ -1,4 +1,5 @@
 <?php
+namespace BaseDatos\Mysql;
 
 class E
 {

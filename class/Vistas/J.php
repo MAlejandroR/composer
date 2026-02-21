@@ -1,4 +1,6 @@
 <?php
+namespace Vistas;
+
 class J
 {
     public function __toString()

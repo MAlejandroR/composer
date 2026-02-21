@@ -1,5 +1,5 @@
 <?php
-
+namespace BaseDatos\Mongo;
 class B
 {
     public function __toString()

@@ -7,7 +7,14 @@
         }
     ],
   "autoload": {
-    "classmap": ["class"]
+    "psr-4": {
+      "BaseDatos\\Mongo\\": "class/BBDD/Mongo",
+      "BaseDatos\\Mysql\\": "class/BBDD/Mysql",
+      "Controlador\\": "class/Controladores",
+      "Controlador\\Privados\\": "class/Controladores/Privados",
+      "Controlador\\Publico\\\\": "class/Controladores/Publicos",
+      "Vistas\\": "class/Vistas"
+    }
 
   }
 

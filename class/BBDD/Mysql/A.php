@@ -1,7 +1,8 @@
 <?php
-namespace Vistas;
+namespace BaseDatos\Mysql;
 
-class K
+
+class A
 {
     public function __toString()
     {

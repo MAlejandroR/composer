@@ -1,4 +1,6 @@
 <?php
+namespace Vistas;
+
 class L
 {
     public function __toString()

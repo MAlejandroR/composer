@@ -1,4 +1,5 @@
 <?php
+namespace Controlador\Privados;
 class G
 {
     public function __toString()

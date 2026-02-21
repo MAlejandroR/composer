@@ -4,13 +4,20 @@ error_reporting(E_ALL);
 
 require "vendor/autoload.php";
 
-$a = new A();
-$b = new B();
-$c = new C();
-$d = new D();
-$e = new E();
-$f = new F();
-$g = new I();
+use Vistas\J;
+use Vistas\I;
+use Vistas\K;
+use Vistas\L;
+
+
+$a = new \BaseDatos\Mongo\A();
+$a2 = new \BaseDatos\Mysql\A();
+$b = new \BaseDatos\Mongo\B();
+$c = new \BaseDatos\Mongo\C();
+$d = new \BaseDatos\Mysql\D();
+$e = new \BaseDatos\Mysql\E();
+$f = new \Controlador\F();
+$g = new \Vistas\I();
 $h = new J();
 $i = new I();
 $j = new J();
@@ -19,6 +26,7 @@ $l = new L();
 
 
 echo $a;
+echo $a2;
 echo $b;
 echo $c;
 echo $d;
